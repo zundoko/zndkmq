@@ -106,9 +106,8 @@ main(int argc, char *argv[])
 
         if (strncmp(rbuf, "q", 1) == 0) { /* cmd: q ? */
             is_run = FALSE;               /*  QUIT    */
-        } else {
-            printf(" %s():[L%4d]: mq_receive(), msg=%s\n", __func__, __LINE__, rbuf);
         }
+        printf(" %s():[L%4d]: mq_receive(), msg=%s\n", __func__, __LINE__, rbuf);
     }
     printf("===== ZNDKMQ: server end   =====\n");
 

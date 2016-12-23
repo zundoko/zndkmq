@@ -60,6 +60,7 @@ main(int argc, char *argv[])
 
         if (strncmp(wbuf, "q", 1) == 0) { /* cmd: q ? */
             is_run = FALSE;               /*  QUIT    */
+            printf(" quit\n");
         }
     }
     printf("===== ZNDKMQ: client end   =====\n");
